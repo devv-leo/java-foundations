@@ -21,12 +21,19 @@ public class LargestSmallest {
         int e = input.nextInt();
 
         int smallest = a;
-        if (b < smallest) { smallest is b; }
-        if (c < smallest) { smallest is c; }
-        if (d < smallest) { smallest is d; }
-        if (e < smallest) { smallest is e; }
+        if (b < smallest) { smallest = b; }
+        if (c < smallest) { smallest = c; }
+        if (d < smallest) { smallest = d; }
+        if (e < smallest) { smallest = e; }
 
-        System.out.printf("The smallest = %d%n", smallest);
+        int largest = a;
+        if (b > largest) { largest = b; }
+        if (c > largest) { largest = c; }
+        if (d > largest) { largest = d; }
+        if (e > largest) { largest = e; }
+
+        System.out.printf("Smallest is %d\n", smallest);
+        System.out.printf("Largest is %d\n", largest);
 
     }
 }
