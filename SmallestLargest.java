@@ -22,10 +22,15 @@ public class SmallestLargest {
         if (b < smallest) { smallest = b; }
         if (c < smallest) { smallest = c; }
 
+        int largest = a;
+        if (b > largest) { largest = b; }
+        if (c > largest) { largest = c; }
+
         System.out.printf("Sum is %d\n", sum);
         System.out.printf("Average is %d\n", average);
         System.out.printf("Product is %d\n", product);
         System.out.printf("Smallest is %d\n", smallest);
+        System.out.printf("Largest is %d\n", largest);
 
         input.close();
     }
