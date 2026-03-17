@@ -1,17 +1,18 @@
-public class TaskSeven {
+public class TaskEight {
     public static void main(String[] args) {
+        
+        int totalSum = 0;
+
         for (int i = 1; i <= 10; i++) {
             if (i % 4 == 0) {
                 int result = i;
-                int sum = 0;
-                
                 for (int j = 0; j < 5; j++) {
-                    sum = sum + result;
-                    result = result * i; 
+                    totalSum = totalSum + result;
+                    result = result * i;
                 }
-                
-                System.out.print(sum + " "); 
             }
         }
+        
+        System.out.println(totalSum); 
     }
 }
