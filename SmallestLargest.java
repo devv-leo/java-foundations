@@ -18,9 +18,14 @@ public class SmallestLargest {
         int average = sum / 3;
         int product = a * b * c;
 
+        int smallest = a;
+        if (b < smallest) { smallest = b; }
+        if (c < smallest) { smallest = c; }
+
         System.out.printf("Sum is %d\n", sum);
         System.out.printf("Average is %d\n", average);
         System.out.printf("Product is %d\n", product);
+        System.out.printf("Smallest is %d\n", smallest);
 
         input.close();
     }
