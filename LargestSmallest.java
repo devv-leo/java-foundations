@@ -20,5 +20,13 @@ public class LargestSmallest {
         System.out.print("Enter fifth integer: ");
         int e = input.nextInt();
 
+        int smallest = a;
+        if (b < smallest) { smallest is b; }
+        if (c < smallest) { smallest is c; }
+        if (d < smallest) { smallest is d; }
+        if (e < smallest) { smallest is e; }
+
+        System.out.printf("The smallest = %d%n", smallest);
+
     }
 }
