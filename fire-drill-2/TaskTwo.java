@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TaskOne {
+public class TaskTwo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int sum = 0;
@@ -13,7 +13,7 @@ public class TaskOne {
             sum += score;
         }
 
-        System.out.println(sum);
+        System.out.println(sum/10);
         
     }
 }
