@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Nokia {
     public static void main(String[] args) {
+        Scanner inputCollector = new Scanner(System.in);
 
         String mainMenu = """
                 List of Menu Functions:
@@ -18,24 +19,31 @@ public class Nokia {
                 11. Clock
                 12. Profiles
                 13. SIM services
+                0. Exit
                 """;
 
-        String phoneBookMenu = """
-                Phone book:
-                1. Search
-                2. Service Nos.
-                3. Add name
-                4. Erase
-                5. Edit
-                6. Assign tone
-                7. Send b'card
-                8. Options
-                9. Speed dials
-                10. Voice tags
-                0. Back
-                """;
-
-        System.out.println(mainMenu);
-        System.out.println(phoneBookMenu);
+        while (true) {
+            System.out.println(mainMenu);
+            switch (inputCollector.nextInt()) {
+                case 1  -> System.out.println("Phone book");
+                case 2  -> System.out.println("Messages");
+                case 3  -> System.out.println("Chat");
+                case 4  -> System.out.println("Call register");
+                case 5  -> System.out.println("Tones");
+                case 6  -> System.out.println("Settings");
+                case 7  -> System.out.println("Call divert");
+                case 8  -> System.out.println("Games");
+                case 9  -> System.out.println("Calculator");
+                case 10 -> System.out.println("Reminders");
+                case 11 -> System.out.println("Clock");
+                case 12 -> System.out.println("Profiles");
+                case 13 -> System.out.println("SIM services");
+                case 0  -> {
+                    System.out.println("Goodbye!");
+                    return;
+                }
+                default -> System.out.println("Invalid option.");
+            }
+        }
     }
 }
