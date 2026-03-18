@@ -120,11 +120,36 @@ public class Nokia {
                 0. Back
                 """;
 
+        String tones = """
+                Tones:
+                1. Ringing tone
+                2. Ringing volume
+                3. Incoming call alert
+                4. Composer
+                5. Message alert tone
+                6. Keypad tones
+                7. Warning and game tones
+                8. Vibrating alert
+                9. Screen saver
+                0. Back
+                """;
+
+        String clock = """
+                Clock:
+                1. Alarm clock
+                2. Clock settings
+                3. Date setting
+                4. Stopwatch
+                5. Countdown timer
+                6. Auto update of date and time
+                0. Back
+                """;
+
         while (true) {
             System.out.println(mainMenu);
             switch (inputCollector.nextInt()) {
 
-                case 1 -> {
+                case 1 -> { // Phone book
                     System.out.println(phoneBookMenu);
                     switch (inputCollector.nextInt()) {
                         case 1  -> System.out.println("Search");
@@ -150,7 +175,7 @@ public class Nokia {
                     }
                 }
 
-                case 2 -> {
+                case 2 -> { // Messages
                     System.out.println(messagesMenu);
                     switch (inputCollector.nextInt()) {
                         case 1  -> System.out.println("Write messages");
@@ -196,7 +221,7 @@ public class Nokia {
 
                 case 3 -> System.out.println("Chat");
 
-                case 4 -> {
+                case 4 -> { // Call register
                     System.out.println(callRegister);
                     switch (inputCollector.nextInt()) {
                         case 1 -> System.out.println("Missed calls");
@@ -240,13 +265,43 @@ public class Nokia {
                     }
                 }
 
-                case 5  -> System.out.println("Tones");
+                case 5 -> { // Tones
+                    System.out.println(tones);
+                    switch (inputCollector.nextInt()) {
+                        case 1 -> System.out.println("Ringing tone");
+                        case 2 -> System.out.println("Ringing volume");
+                        case 3 -> System.out.println("Incoming call alert");
+                        case 4 -> System.out.println("Composer");
+                        case 5 -> System.out.println("Message alert tone");
+                        case 6 -> System.out.println("Keypad tones");
+                        case 7 -> System.out.println("Warning and game tones");
+                        case 8 -> System.out.println("Vibrating alert");
+                        case 9 -> System.out.println("Screen saver");
+                        case 0 -> System.out.println("Back");
+                        default -> System.out.println("Invalid option.");
+                    }
+                }
+
                 case 6  -> System.out.println("Settings");
                 case 7  -> System.out.println("Call divert");
                 case 8  -> System.out.println("Games");
                 case 9  -> System.out.println("Calculator");
                 case 10 -> System.out.println("Reminders");
-                case 11 -> System.out.println("Clock");
+
+                case 11 -> { // Clock
+                    System.out.println(clock);
+                    switch (inputCollector.nextInt()) {
+                        case 1 -> System.out.println("Alarm clock");
+                        case 2 -> System.out.println("Clock settings");
+                        case 3 -> System.out.println("Date setting");
+                        case 4 -> System.out.println("Stopwatch");
+                        case 5 -> System.out.println("Countdown timer");
+                        case 6 -> System.out.println("Auto update of date and time");
+                        case 0 -> System.out.println("Back");
+                        default -> System.out.println("Invalid option.");
+                    }
+                }
+
                 case 12 -> System.out.println("Profiles");
                 case 13 -> System.out.println("SIM services");
                 case 0  -> {
