@@ -134,6 +134,48 @@ public class Nokia {
                 0. Back
                 """;
 
+        String settings = """
+                Settings:
+                1. Call settings
+                2. Phone settings
+                3. Security settings
+                4. Restore factory settings
+                0. Back
+                """;
+
+        String callSettings = """
+                Call settings:
+                1. Automatic redial
+                2. Speed dialling
+                3. Call waiting options
+                4. Own number sending
+                5. Phone line in use
+                6. Automatic answer
+                0. Back
+                """;
+
+        String phoneSettings = """
+                Phone settings:
+                1. Language
+                2. Cell info display
+                3. Welcome note
+                4. Network selection
+                5. Lights
+                6. Confirm SIM service actions
+                0. Back
+                """;
+
+        String securitySettings = """
+                Security settings:
+                1. PIN code request
+                2. Call barring service
+                3. Fixed dialling
+                4. Closed user group
+                5. Phone security
+                6. Change access codes
+                0. Back
+                """;
+
         String clock = """
                 Clock:
                 1. Alarm clock
@@ -282,7 +324,54 @@ public class Nokia {
                     }
                 }
 
-                case 6  -> System.out.println("Settings");
+                case 6 -> { // Settings
+                    System.out.println(settings);
+                    switch (inputCollector.nextInt()) {
+                        case 1 -> {
+                            System.out.println(callSettings);
+                            switch (inputCollector.nextInt()) {
+                                case 1 -> System.out.println("Automatic redial");
+                                case 2 -> System.out.println("Speed dialling");
+                                case 3 -> System.out.println("Call waiting options");
+                                case 4 -> System.out.println("Own number sending");
+                                case 5 -> System.out.println("Phone line in use");
+                                case 6 -> System.out.println("Automatic answer");
+                                case 0 -> System.out.println("Back");
+                                default -> System.out.println("Invalid option.");
+                            }
+                        }
+                        case 2 -> {
+                            System.out.println(phoneSettings);
+                            switch (inputCollector.nextInt()) {
+                                case 1 -> System.out.println("Language");
+                                case 2 -> System.out.println("Cell info display");
+                                case 3 -> System.out.println("Welcome note");
+                                case 4 -> System.out.println("Network selection");
+                                case 5 -> System.out.println("Lights");
+                                case 6 -> System.out.println("Confirm SIM service actions");
+                                case 0 -> System.out.println("Back");
+                                default -> System.out.println("Invalid option.");
+                            }
+                        }
+                        case 3 -> {
+                            System.out.println(securitySettings);
+                            switch (inputCollector.nextInt()) {
+                                case 1 -> System.out.println("PIN code request");
+                                case 2 -> System.out.println("Call barring service");
+                                case 3 -> System.out.println("Fixed dialling");
+                                case 4 -> System.out.println("Closed user group");
+                                case 5 -> System.out.println("Phone security");
+                                case 6 -> System.out.println("Change access codes");
+                                case 0 -> System.out.println("Back");
+                                default -> System.out.println("Invalid option.");
+                            }
+                        }
+                        case 4  -> System.out.println("Restore factory settings");
+                        case 0  -> System.out.println("Back");
+                        default -> System.out.println("Invalid option.");
+                    }
+                }
+
                 case 7  -> System.out.println("Call divert");
                 case 8  -> System.out.println("Games");
                 case 9  -> System.out.println("Calculator");
