@@ -82,11 +82,49 @@ public class Nokia {
                 0. Back
                 """;
 
+        String callRegister = """
+                Call register:
+                1. Missed calls
+                2. Received calls
+                3. Dialled numbers
+                4. Erase recent call lists
+                5. Show call duration
+                6. Show call costs
+                7. Call cost settings
+                8. Prepaid credit
+                0. Back
+                """;
+
+        String showCallDuration = """
+                Show call duration:
+                1. Last call duration
+                2. All calls' duration
+                3. Received calls' duration
+                4. Dialled calls' duration
+                5. Clear timers
+                0. Back
+                """;
+
+        String showCallCosts = """
+                Show call costs:
+                1. Last call cost
+                2. All calls' cost
+                3. Clear counters
+                0. Back
+                """;
+
+        String callCostSettings = """
+                Call cost settings:
+                1. Call cost limit
+                2. Show costs in
+                0. Back
+                """;
+
         while (true) {
             System.out.println(mainMenu);
             switch (inputCollector.nextInt()) {
 
-                case 1 -> { // Phone book
+                case 1 -> {
                     System.out.println(phoneBookMenu);
                     switch (inputCollector.nextInt()) {
                         case 1  -> System.out.println("Search");
@@ -96,7 +134,7 @@ public class Nokia {
                         case 5  -> System.out.println("Edit");
                         case 6  -> System.out.println("Assign tone");
                         case 7  -> System.out.println("Send b'card");
-                        case 8  -> { // Options
+                        case 8  -> {
                             System.out.println(phoneBookOptions);
                             switch (inputCollector.nextInt()) {
                                 case 1 -> System.out.println("Type of view");
@@ -112,7 +150,7 @@ public class Nokia {
                     }
                 }
 
-                case 2 -> { // Messages
+                case 2 -> {
                     System.out.println(messagesMenu);
                     switch (inputCollector.nextInt()) {
                         case 1  -> System.out.println("Write messages");
@@ -121,10 +159,10 @@ public class Nokia {
                         case 4  -> System.out.println("Picture messages");
                         case 5  -> System.out.println("Templates");
                         case 6  -> System.out.println("Smileys");
-                        case 7  -> { // Message settings
+                        case 7  -> {
                             System.out.println(messageSettings);
                             switch (inputCollector.nextInt()) {
-                                case 1 -> { // Set 1
+                                case 1 -> {
                                     System.out.println(messageSet1);
                                     switch (inputCollector.nextInt()) {
                                         case 1 -> System.out.println("Message centre number");
@@ -134,7 +172,7 @@ public class Nokia {
                                         default -> System.out.println("Invalid option.");
                                     }
                                 }
-                                case 2 -> { // Common
+                                case 2 -> {
                                     System.out.println(messageCommon);
                                     switch (inputCollector.nextInt()) {
                                         case 1 -> System.out.println("Delivery reports");
@@ -156,8 +194,52 @@ public class Nokia {
                     }
                 }
 
-                case 3  -> System.out.println("Chat");
-                case 4  -> System.out.println("Call register");
+                case 3 -> System.out.println("Chat");
+
+                case 4 -> {
+                    System.out.println(callRegister);
+                    switch (inputCollector.nextInt()) {
+                        case 1 -> System.out.println("Missed calls");
+                        case 2 -> System.out.println("Received calls");
+                        case 3 -> System.out.println("Dialled numbers");
+                        case 4 -> System.out.println("Erase recent call lists");
+                        case 5 -> {
+                            System.out.println(showCallDuration);
+                            switch (inputCollector.nextInt()) {
+                                case 1 -> System.out.println("Last call duration");
+                                case 2 -> System.out.println("All calls' duration");
+                                case 3 -> System.out.println("Received calls' duration");
+                                case 4 -> System.out.println("Dialled calls' duration");
+                                case 5 -> System.out.println("Clear timers");
+                                case 0 -> System.out.println("Back");
+                                default -> System.out.println("Invalid option.");
+                            }
+                        }
+                        case 6 -> {
+                            System.out.println(showCallCosts);
+                            switch (inputCollector.nextInt()) {
+                                case 1 -> System.out.println("Last call cost");
+                                case 2 -> System.out.println("All calls' cost");
+                                case 3 -> System.out.println("Clear counters");
+                                case 0 -> System.out.println("Back");
+                                default -> System.out.println("Invalid option.");
+                            }
+                        }
+                        case 7 -> {
+                            System.out.println(callCostSettings);
+                            switch (inputCollector.nextInt()) {
+                                case 1 -> System.out.println("Call cost limit");
+                                case 2 -> System.out.println("Show costs in");
+                                case 0 -> System.out.println("Back");
+                                default -> System.out.println("Invalid option.");
+                            }
+                        }
+                        case 8  -> System.out.println("Prepaid credit");
+                        case 0  -> System.out.println("Back");
+                        default -> System.out.println("Invalid option.");
+                    }
+                }
+
                 case 5  -> System.out.println("Tones");
                 case 6  -> System.out.println("Settings");
                 case 7  -> System.out.println("Call divert");
