@@ -22,7 +22,7 @@ public class Nokia {
                 0. Exit
                 """;
 
-        String phoneBookMenu = """
+        String phoneBook = """
                 Phone book:
                 1. Search
                 2. Service Nos.
@@ -37,14 +37,14 @@ public class Nokia {
                 0. Back
                 """;
 
-        String phoneBookOptions = """
+        String options = """
                 Options:
                 1. Type of view
                 2. Memory status
                 0. Back
                 """;
 
-        String messagesMenu = """
+        String messages = """
                 Messages:
                 1. Write messages
                 2. Inbox
@@ -66,7 +66,7 @@ public class Nokia {
                 0. Back
                 """;
 
-        String messageSet1 = """
+        String set1 = """
                 Set 1:
                 1. Message centre number
                 2. Messages sent as
@@ -74,7 +74,7 @@ public class Nokia {
                 0. Back
                 """;
 
-        String messageCommon = """
+        String common = """
                 Common:
                 1. Delivery reports
                 2. Reply via same centre
@@ -191,8 +191,8 @@ public class Nokia {
             System.out.println(mainMenu);
             switch (inputCollector.nextInt()) {
 
-                case 1 -> { // Phone book
-                    System.out.println(phoneBookMenu);
+                case 1 -> {
+                    System.out.println(phoneBook);
                     switch (inputCollector.nextInt()) {
                         case 1  -> System.out.println("Search");
                         case 2  -> System.out.println("Service Nos.");
@@ -202,7 +202,7 @@ public class Nokia {
                         case 6  -> System.out.println("Assign tone");
                         case 7  -> System.out.println("Send b'card");
                         case 8  -> {
-                            System.out.println(phoneBookOptions);
+                            System.out.println(options);
                             switch (inputCollector.nextInt()) {
                                 case 1 -> System.out.println("Type of view");
                                 case 2 -> System.out.println("Memory status");
@@ -217,8 +217,8 @@ public class Nokia {
                     }
                 }
 
-                case 2 -> { // Messages
-                    System.out.println(messagesMenu);
+                case 2 -> {
+                    System.out.println(messages);
                     switch (inputCollector.nextInt()) {
                         case 1  -> System.out.println("Write messages");
                         case 2  -> System.out.println("Inbox");
@@ -230,7 +230,7 @@ public class Nokia {
                             System.out.println(messageSettings);
                             switch (inputCollector.nextInt()) {
                                 case 1 -> {
-                                    System.out.println(messageSet1);
+                                    System.out.println(set1);
                                     switch (inputCollector.nextInt()) {
                                         case 1 -> System.out.println("Message centre number");
                                         case 2 -> System.out.println("Messages sent as");
@@ -240,7 +240,7 @@ public class Nokia {
                                     }
                                 }
                                 case 2 -> {
-                                    System.out.println(messageCommon);
+                                    System.out.println(common);
                                     switch (inputCollector.nextInt()) {
                                         case 1 -> System.out.println("Delivery reports");
                                         case 2 -> System.out.println("Reply via same centre");
@@ -263,7 +263,7 @@ public class Nokia {
 
                 case 3 -> System.out.println("Chat");
 
-                case 4 -> { // Call register
+                case 4 -> {
                     System.out.println(callRegister);
                     switch (inputCollector.nextInt()) {
                         case 1 -> System.out.println("Missed calls");
@@ -307,7 +307,7 @@ public class Nokia {
                     }
                 }
 
-                case 5 -> { // Tones
+                case 5 -> {
                     System.out.println(tones);
                     switch (inputCollector.nextInt()) {
                         case 1 -> System.out.println("Ringing tone");
@@ -324,7 +324,7 @@ public class Nokia {
                     }
                 }
 
-                case 6 -> { // Settings
+                case 6 -> {
                     System.out.println(settings);
                     switch (inputCollector.nextInt()) {
                         case 1 -> {
@@ -377,7 +377,7 @@ public class Nokia {
                 case 9  -> System.out.println("Calculator");
                 case 10 -> System.out.println("Reminders");
 
-                case 11 -> { // Clock
+                case 11 -> {
                     System.out.println(clock);
                     switch (inputCollector.nextInt()) {
                         case 1 -> System.out.println("Alarm clock");
