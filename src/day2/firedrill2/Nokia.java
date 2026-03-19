@@ -19,7 +19,6 @@ public class Nokia {
                 11. Clock
                 12. Profiles
                 13. SIM services
-                0. Exit
                 """;
 
         String phoneBook = """
@@ -393,11 +392,7 @@ public class Nokia {
 
                 case 12 -> System.out.println("Profiles");
                 case 13 -> System.out.println("SIM services");
-                case 0  -> {
-                    System.out.println("Goodbye!");
-                    return;
-                }
-                default -> System.out.println("Invalid option.");
+                default -> System.out.println("Enter a valid option from the menu");
             }
         }
     }

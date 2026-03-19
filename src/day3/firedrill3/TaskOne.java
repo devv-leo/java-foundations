@@ -14,7 +14,7 @@ public class TaskOne {
 
 		for (int i = 0; i < Math.abs(num2); i++) {
 			product += num1;
-		}
+	}
 
 		if (num2 < 0) {
             		product = -product;
