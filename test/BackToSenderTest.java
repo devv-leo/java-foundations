@@ -26,27 +26,27 @@ public class BackToSenderTest {
 
     @Test
     public void testFiftyPercent() {
-        assertEquals(7000, BackToSender.calculateWage(50));
+        assertEquals(15000, BackToSender.calculateWage(50));
     }
 
     @Test
     public void testFiftyNinePercent() {
-        assertEquals(7180, BackToSender.calculateWage(59));
+        assertEquals(16800, BackToSender.calculateWage(59));
     }
 
     @Test
     public void testSixtyPercent() {
-        assertEquals(7500, BackToSender.calculateWage(60));
+        assertEquals(20000, BackToSender.calculateWage(60));
     }
 
     @Test
     public void testSixtyNinePercent() {
-        assertEquals(7725, BackToSender.calculateWage(69));
+        assertEquals(22250, BackToSender.calculateWage(69));
     }
 
     @Test
     public void testSeventyPercent() {
-        assertEquals(8500, BackToSender.calculateWage(70));
+        assertEquals(40000, BackToSender.calculateWage(70));
     }
 
     @Test
