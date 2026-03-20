@@ -1,4 +1,4 @@
-# DreamDevs by Moniepoint Bootcamp - Java Foundations
+# DreamDevs 2.0 Bootcamp by Moniepoint
 
 This repository contains all the tasks and projects in the DreamDevs 2.0 bootcamp by Moniepoint, focusing on Java programming and GCP.
 
@@ -11,7 +11,8 @@ java-foundations/
 │   ├── day2/                     # Day 2 exercises and projects
 │   ├── day3/                     # Day 3 exercises and projects
 │   │   └── weekendSnacks/        # Weekend challenge tasks
-│   │       calculator
+│   │       ├── BackToSender.java # Dispatch rider wage calculator
+│   │       └── Functions.java    # Mathematical operations and checks
 │   └── dsa/                      # Data structures and algorithms
 ├── test/                         # Test directory
 │   └── dsa/                      # DSA tests
