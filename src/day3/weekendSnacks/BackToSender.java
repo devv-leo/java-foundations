@@ -1,8 +1,11 @@
 package day3.weekendSnacks;
 
 public class BackToSender {
-    public static void main(String[] args) {
-
+    static void main(String[] args) {
+        System.out.println("80 deliveries: " + calculateWage(80));
+        System.out.println("25 deliveries: " + calculateWage(25));
+        System.out.println("70 deliveries: " + calculateWage(70));
+        System.out.println("100 deliveries: " + calculateWage(100));
     }
     
     public static int calculateWage(int successfulDeliveries) {
@@ -10,14 +13,13 @@ public class BackToSender {
             return 0;
         }
         
-        int percentage = (successfulDeliveries * 100) / 100;
         int totalPay = 5000;
-        
-        if (percentage < 50) {
+
+        if (successfulDeliveries < 50) {
             totalPay = totalPay + (successfulDeliveries * 160);
-        } else if (percentage < 60) {
+        } else if (successfulDeliveries < 60) {
             totalPay = totalPay + (successfulDeliveries * 200);
-        } else if (percentage < 70) {
+        } else if (successfulDeliveries < 70) {
             totalPay = totalPay + (successfulDeliveries * 250);
         } else {
             totalPay = totalPay + (successfulDeliveries * 500);
