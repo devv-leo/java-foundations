@@ -9,4 +9,10 @@ public class BackToSenderTest {
         assertEquals(0, BackToSender.calculateWage(-5));
     }
 
+    @Test
+    public void testInvalidInputOverHundred() {
+        assertEquals(0, BackToSender.calculateWage(150));
+    }
+
+    }
 }
