@@ -12,11 +12,18 @@ public class BackToSender {
         
         int percentage = (successfulDeliveries * 100) / 100;
         int basePay = 5000;
+        int totalPay = basePay;
         
         if (percentage < 50) {
-            return basePay;
+            totalPay = totalPay + (successfulDeliveries * 160);
+        } else if (percentage >= 50 && percentage < 60) {
+            totalPay = totalPay + (successfulDeliveries * 200);
+        } else if (percentage >= 60 && percentage < 70) {
+            totalPay = totalPay + (successfulDeliveries * 250);
+        } else {
+            totalPay = totalPay + (successfulDeliveries * 500);
         }
         
-        return basePay;
+        return totalPay;
     }
 }
