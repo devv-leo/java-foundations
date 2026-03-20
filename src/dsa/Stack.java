@@ -1,16 +1,18 @@
-package dsa;
+﻿package dsa;
 
 public class Stack {
-    private boolean isEmpty = true;
-    private
+    private int count;
+    private String[] elements = new String[5];
+
     public boolean isEmpty() {
-        return isEmpty;
+        return count == 0;
     }
 
-    public void push(String elements) {
+    public void push(String element) {
+        elements[count++] = element;
     }
 
     public String pop() {
-        return null;
+        return elements[--count];
     }
 }
