@@ -1,4 +1,4 @@
-package day1;
+﻿package day1;
 
 import java.util.Scanner;
 
@@ -19,5 +19,6 @@ public class ComparingIntegers {
         if (square > 100) System.out.printf("%d squared (%d) is greater than 100\n", number, square);
         if (square == 100) System.out.printf("%d squared (%d) is equal to 100\n", number, square);
         if (square < 100) System.out.printf("%d squared (%d) is less than 100\n", number, square);
+        input.close();
     }
 }

@@ -1,4 +1,4 @@
-package day1;
+﻿package day1;
 
 import java.util.Scanner;
 
@@ -18,5 +18,6 @@ public class SeparateDigits {
 
         System.out.printf("%d   %d   %d   %d   %d\n", d1, d2, d3, d4, d5);
 
+        input.close();
     }
 }

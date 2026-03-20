@@ -1,4 +1,4 @@
-package day2.firedrill2;
+﻿package day2.firedrill2;
 
 import java.util.Scanner;
 
@@ -15,6 +15,7 @@ public class TaskFour {
             
             if (i % 2 == 0) {
                 sum += score;
+        scanner.close();
             }
         }
 

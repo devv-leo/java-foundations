@@ -1,4 +1,4 @@
-package day1;
+﻿package day1;
 
 import java.util.Scanner;
 
@@ -37,5 +37,6 @@ public class LargestSmallest {
         System.out.printf("Smallest is %d\n", smallest);
         System.out.printf("Largest is %d\n", largest);
 
+        input.close();
     }
 }

@@ -24,6 +24,7 @@ public class Multiply {
 
 		System.out.println("Product is " + product);
 
+		inputCollector.close();
 	}
 
 }

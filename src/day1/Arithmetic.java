@@ -23,5 +23,6 @@ public class Arithmetic {
         System.out.printf("Sum of the squares is %d\n", sum);
         System.out.printf("Difference of the squares = %d\n", difference);
 
+        input.close();
     }
 }

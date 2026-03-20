@@ -1,4 +1,4 @@
-package day2.firedrill2;
+﻿package day2.firedrill2;
 
 import java.util.Scanner;
 
@@ -17,6 +17,7 @@ public class TaskTwo {
 
         System.out.println(sum/10);
         
+        scanner.close();
     }
 }
 

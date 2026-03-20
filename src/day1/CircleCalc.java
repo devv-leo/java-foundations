@@ -1,4 +1,4 @@
-package day1;
+﻿package day1;
 
 import java.util.Scanner;
 
@@ -14,5 +14,6 @@ public class CircleCalc {
         System.out.printf("Circumference = %f\n",  2 * Math.PI * radius);
         System.out.printf("Area = %f\n",  Math.PI * radius * radius);
 
+        input.close();
     }
 }

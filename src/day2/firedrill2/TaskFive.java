@@ -20,6 +20,7 @@ public class TaskFive {
 
         System.out.println("Sum of your even scores is " + sum);
         
+        scanner.close();
     }
     
 }

@@ -1,4 +1,4 @@
-package day1;
+﻿package day1;
 
 import java.util.Scanner;
 
@@ -16,5 +16,6 @@ public class DivisibleByThree {
             System.out.printf("%d is NOT divisible by 3\n", number);
         }
 
+        input.close();
     }
 }
