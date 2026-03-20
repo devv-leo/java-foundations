@@ -14,5 +14,8 @@ public class BackToSenderTest {
         assertEquals(0, BackToSender.calculateWage(150));
     }
 
+    @Test
+    public void testZeroDeliveries() {
+        assertEquals(5000, BackToSender.calculateWage(0));
     }
 }
