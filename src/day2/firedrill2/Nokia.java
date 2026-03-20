@@ -19,6 +19,7 @@ public class Nokia {
                 11. Clock
                 12. Profiles
                 13. SIM services
+                0. Exit
                 """;
 
         String phoneBook = """
@@ -186,6 +187,8 @@ public class Nokia {
                 0. Back
                 """;
 
+        String back = "0. Back";
+
         while (true) {
             System.out.println(mainMenu);
             switch (inputCollector.nextInt()) {
@@ -193,25 +196,58 @@ public class Nokia {
                 case 1 -> {
                     System.out.println(phoneBook);
                     switch (inputCollector.nextInt()) {
-                        case 1  -> System.out.println("Search");
-                        case 2  -> System.out.println("Service Nos.");
-                        case 3  -> System.out.println("Add name");
-                        case 4  -> System.out.println("Erase");
-                        case 5  -> System.out.println("Edit");
-                        case 6  -> System.out.println("Assign tone");
-                        case 7  -> System.out.println("Send b'card");
-                        case 8  -> {
+                        case 1 -> {
+                            System.out.println("Search\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 2 -> {
+                            System.out.println("Service Nos.\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 3 -> {
+                            System.out.println("Add name\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 4 -> {
+                            System.out.println("Erase\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 5 -> {
+                            System.out.println("Edit\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 6 -> {
+                            System.out.println("Assign tone\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 7 -> {
+                            System.out.println("Send b'card\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 8 -> {
                             System.out.println(options);
                             switch (inputCollector.nextInt()) {
-                                case 1 -> System.out.println("Type of view");
-                                case 2 -> System.out.println("Memory status");
-                                case 0 -> System.out.println("Back");
+                                case 1 -> {
+                                    System.out.println("Type of view\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 2 -> {
+                                    System.out.println("Memory status\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 0 -> {}
                                 default -> System.out.println("Invalid option.");
                             }
                         }
-                        case 9  -> System.out.println("Speed dials");
-                        case 10 -> System.out.println("Voice tags");
-                        case 0  -> System.out.println("Back");
+                        case 9 -> {
+                            System.out.println("Speed dials\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 10 -> {
+                            System.out.println("Voice tags\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 0  -> {}
                         default -> System.out.println("Invalid option.");
                     }
                 }
@@ -219,89 +255,182 @@ public class Nokia {
                 case 2 -> {
                     System.out.println(messages);
                     switch (inputCollector.nextInt()) {
-                        case 1  -> System.out.println("Write messages");
-                        case 2  -> System.out.println("Inbox");
-                        case 3  -> System.out.println("Outbox");
-                        case 4  -> System.out.println("Picture messages");
-                        case 5  -> System.out.println("Templates");
-                        case 6  -> System.out.println("Smileys");
-                        case 7  -> {
+                        case 1 -> {
+                            System.out.println("Write messages\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 2 -> {
+                            System.out.println("Inbox\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 3 -> {
+                            System.out.println("Outbox\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 4 -> {
+                            System.out.println("Picture messages\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 5 -> {
+                            System.out.println("Templates\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 6 -> {
+                            System.out.println("Smileys\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 7 -> {
                             System.out.println(messageSettings);
                             switch (inputCollector.nextInt()) {
                                 case 1 -> {
                                     System.out.println(set1);
                                     switch (inputCollector.nextInt()) {
-                                        case 1 -> System.out.println("Message centre number");
-                                        case 2 -> System.out.println("Messages sent as");
-                                        case 3 -> System.out.println("Message validity");
-                                        case 0 -> System.out.println("Back");
+                                        case 1 -> {
+                                            System.out.println("Message centre number\n" + back);
+                                            inputCollector.nextInt();
+                                        }
+                                        case 2 -> {
+                                            System.out.println("Messages sent as\n" + back);
+                                            inputCollector.nextInt();
+                                        }
+                                        case 3 -> {
+                                            System.out.println("Message validity\n" + back);
+                                            inputCollector.nextInt();
+                                        }
+                                        case 0  -> {}
                                         default -> System.out.println("Invalid option.");
                                     }
                                 }
                                 case 2 -> {
                                     System.out.println(common);
                                     switch (inputCollector.nextInt()) {
-                                        case 1 -> System.out.println("Delivery reports");
-                                        case 2 -> System.out.println("Reply via same centre");
-                                        case 3 -> System.out.println("Character support");
-                                        case 0 -> System.out.println("Back");
+                                        case 1 -> {
+                                            System.out.println("Delivery reports\n" + back);
+                                            inputCollector.nextInt();
+                                        }
+                                        case 2 -> {
+                                            System.out.println("Reply via same centre\n" + back);
+                                            inputCollector.nextInt();
+                                        }
+                                        case 3 -> {
+                                            System.out.println("Character support\n" + back);
+                                            inputCollector.nextInt();
+                                        }
+                                        case 0  -> {}
                                         default -> System.out.println("Invalid option.");
                                     }
                                 }
-                                case 0  -> System.out.println("Back");
+                                case 0  -> {}
                                 default -> System.out.println("Invalid option.");
                             }
                         }
-                        case 8  -> System.out.println("Info service");
-                        case 9  -> System.out.println("Voice mailbox number");
-                        case 10 -> System.out.println("Service command editor");
-                        case 0  -> System.out.println("Back");
+                        case 8 -> {
+                            System.out.println("Info service\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 9 -> {
+                            System.out.println("Voice mailbox number\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 10 -> {
+                            System.out.println("Service command editor\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 0  -> {}
                         default -> System.out.println("Invalid option.");
                     }
                 }
 
-                case 3 -> System.out.println("Chat");
+                case 3 -> {
+                    System.out.println("Chat\n" + back);
+                    inputCollector.nextInt();
+                }
 
                 case 4 -> {
                     System.out.println(callRegister);
                     switch (inputCollector.nextInt()) {
-                        case 1 -> System.out.println("Missed calls");
-                        case 2 -> System.out.println("Received calls");
-                        case 3 -> System.out.println("Dialled numbers");
-                        case 4 -> System.out.println("Erase recent call lists");
+                        case 1 -> {
+                            System.out.println("Missed calls\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 2 -> {
+                            System.out.println("Received calls\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 3 -> {
+                            System.out.println("Dialled numbers\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 4 -> {
+                            System.out.println("Erase recent call lists\n" + back);
+                            inputCollector.nextInt();
+                        }
                         case 5 -> {
                             System.out.println(showCallDuration);
                             switch (inputCollector.nextInt()) {
-                                case 1 -> System.out.println("Last call duration");
-                                case 2 -> System.out.println("All calls' duration");
-                                case 3 -> System.out.println("Received calls' duration");
-                                case 4 -> System.out.println("Dialled calls' duration");
-                                case 5 -> System.out.println("Clear timers");
-                                case 0 -> System.out.println("Back");
+                                case 1 -> {
+                                    System.out.println("Last call duration\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 2 -> {
+                                    System.out.println("All calls' duration\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 3 -> {
+                                    System.out.println("Received calls' duration\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 4 -> {
+                                    System.out.println("Dialled calls' duration\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 5 -> {
+                                    System.out.println("Clear timers\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 0  -> {}
                                 default -> System.out.println("Invalid option.");
                             }
                         }
                         case 6 -> {
                             System.out.println(showCallCosts);
                             switch (inputCollector.nextInt()) {
-                                case 1 -> System.out.println("Last call cost");
-                                case 2 -> System.out.println("All calls' cost");
-                                case 3 -> System.out.println("Clear counters");
-                                case 0 -> System.out.println("Back");
+                                case 1 -> {
+                                    System.out.println("Last call cost\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 2 -> {
+                                    System.out.println("All calls' cost\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 3 -> {
+                                    System.out.println("Clear counters\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 0  -> {}
                                 default -> System.out.println("Invalid option.");
                             }
                         }
                         case 7 -> {
                             System.out.println(callCostSettings);
                             switch (inputCollector.nextInt()) {
-                                case 1 -> System.out.println("Call cost limit");
-                                case 2 -> System.out.println("Show costs in");
-                                case 0 -> System.out.println("Back");
+                                case 1 -> {
+                                    System.out.println("Call cost limit\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 2 -> {
+                                    System.out.println("Show costs in\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 0  -> {}
                                 default -> System.out.println("Invalid option.");
                             }
                         }
-                        case 8  -> System.out.println("Prepaid credit");
-                        case 0  -> System.out.println("Back");
+                        case 8 -> {
+                            System.out.println("Prepaid credit\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 0  -> {}
                         default -> System.out.println("Invalid option.");
                     }
                 }
@@ -309,16 +438,43 @@ public class Nokia {
                 case 5 -> {
                     System.out.println(tones);
                     switch (inputCollector.nextInt()) {
-                        case 1 -> System.out.println("Ringing tone");
-                        case 2 -> System.out.println("Ringing volume");
-                        case 3 -> System.out.println("Incoming call alert");
-                        case 4 -> System.out.println("Composer");
-                        case 5 -> System.out.println("Message alert tone");
-                        case 6 -> System.out.println("Keypad tones");
-                        case 7 -> System.out.println("Warning and game tones");
-                        case 8 -> System.out.println("Vibrating alert");
-                        case 9 -> System.out.println("Screen saver");
-                        case 0 -> System.out.println("Back");
+                        case 1 -> {
+                            System.out.println("Ringing tone\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 2 -> {
+                            System.out.println("Ringing volume\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 3 -> {
+                            System.out.println("Incoming call alert\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 4 -> {
+                            System.out.println("Composer\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 5 -> {
+                            System.out.println("Message alert tone\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 6 -> {
+                            System.out.println("Keypad tones\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 7 -> {
+                            System.out.println("Warning and game tones\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 8 -> {
+                            System.out.println("Vibrating alert\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 9 -> {
+                            System.out.println("Screen saver\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 0  -> {}
                         default -> System.out.println("Invalid option.");
                     }
                 }
@@ -329,70 +485,173 @@ public class Nokia {
                         case 1 -> {
                             System.out.println(callSettings);
                             switch (inputCollector.nextInt()) {
-                                case 1 -> System.out.println("Automatic redial");
-                                case 2 -> System.out.println("Speed dialling");
-                                case 3 -> System.out.println("Call waiting options");
-                                case 4 -> System.out.println("Own number sending");
-                                case 5 -> System.out.println("Phone line in use");
-                                case 6 -> System.out.println("Automatic answer");
-                                case 0 -> System.out.println("Back");
+                                case 1 -> {
+                                    System.out.println("Automatic redial\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 2 -> {
+                                    System.out.println("Speed dialling\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 3 -> {
+                                    System.out.println("Call waiting options\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 4 -> {
+                                    System.out.println("Own number sending\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 5 -> {
+                                    System.out.println("Phone line in use\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 6 -> {
+                                    System.out.println("Automatic answer\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 0  -> {}
                                 default -> System.out.println("Invalid option.");
                             }
                         }
                         case 2 -> {
                             System.out.println(phoneSettings);
                             switch (inputCollector.nextInt()) {
-                                case 1 -> System.out.println("Language");
-                                case 2 -> System.out.println("Cell info display");
-                                case 3 -> System.out.println("Welcome note");
-                                case 4 -> System.out.println("Network selection");
-                                case 5 -> System.out.println("Lights");
-                                case 6 -> System.out.println("Confirm SIM service actions");
-                                case 0 -> System.out.println("Back");
+                                case 1 -> {
+                                    System.out.println("Language\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 2 -> {
+                                    System.out.println("Cell info display\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 3 -> {
+                                    System.out.println("Welcome note\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 4 -> {
+                                    System.out.println("Network selection\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 5 -> {
+                                    System.out.println("Lights\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 6 -> {
+                                    System.out.println("Confirm SIM service actions\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 0  -> {}
                                 default -> System.out.println("Invalid option.");
                             }
                         }
                         case 3 -> {
                             System.out.println(securitySettings);
                             switch (inputCollector.nextInt()) {
-                                case 1 -> System.out.println("PIN code request");
-                                case 2 -> System.out.println("Call barring service");
-                                case 3 -> System.out.println("Fixed dialling");
-                                case 4 -> System.out.println("Closed user group");
-                                case 5 -> System.out.println("Phone security");
-                                case 6 -> System.out.println("Change access codes");
-                                case 0 -> System.out.println("Back");
+                                case 1 -> {
+                                    System.out.println("PIN code request\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 2 -> {
+                                    System.out.println("Call barring service\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 3 -> {
+                                    System.out.println("Fixed dialling\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 4 -> {
+                                    System.out.println("Closed user group\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 5 -> {
+                                    System.out.println("Phone security\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 6 -> {
+                                    System.out.println("Change access codes\n" + back);
+                                    inputCollector.nextInt();
+                                }
+                                case 0  -> {}
                                 default -> System.out.println("Invalid option.");
                             }
                         }
-                        case 4  -> System.out.println("Restore factory settings");
-                        case 0  -> System.out.println("Back");
+                        case 4 -> {
+                            System.out.println("Restore factory settings\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 0  -> {}
                         default -> System.out.println("Invalid option.");
                     }
                 }
 
-                case 7  -> System.out.println("Call divert");
-                case 8  -> System.out.println("Games");
-                case 9  -> System.out.println("Calculator");
-                case 10 -> System.out.println("Reminders");
+                case 7 -> {
+                    System.out.println("Call divert\n" + back);
+                    inputCollector.nextInt();
+                }
+
+                case 8 -> {
+                    System.out.println("Games\n" + back);
+                    inputCollector.nextInt();
+                }
+
+                case 9 -> {
+                    System.out.println("Calculator\n" + back);
+                    inputCollector.nextInt();
+                }
+
+                case 10 -> {
+                    System.out.println("Reminders\n" + back);
+                    inputCollector.nextInt();
+                }
 
                 case 11 -> {
                     System.out.println(clock);
                     switch (inputCollector.nextInt()) {
-                        case 1 -> System.out.println("Alarm clock");
-                        case 2 -> System.out.println("Clock settings");
-                        case 3 -> System.out.println("Date setting");
-                        case 4 -> System.out.println("Stopwatch");
-                        case 5 -> System.out.println("Countdown timer");
-                        case 6 -> System.out.println("Auto update of date and time");
-                        case 0 -> System.out.println("Back");
+                        case 1 -> {
+                            System.out.println("Alarm clock\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 2 -> {
+                            System.out.println("Clock settings\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 3 -> {
+                            System.out.println("Date setting\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 4 -> {
+                            System.out.println("Stopwatch\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 5 -> {
+                            System.out.println("Countdown timer\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 6 -> {
+                            System.out.println("Auto update of date and time\n" + back);
+                            inputCollector.nextInt();
+                        }
+                        case 0  -> {}
                         default -> System.out.println("Invalid option.");
                     }
                 }
 
-                case 12 -> System.out.println("Profiles");
-                case 13 -> System.out.println("SIM services");
-                default -> System.out.println("Enter a valid option from the menu");
+                case 12 -> {
+                    System.out.println("Profiles\n" + back);
+                    inputCollector.nextInt();
+                }
+
+                case 13 -> {
+                    System.out.println("SIM services\n" + back);
+                    inputCollector.nextInt();
+                }
+
+                case 0 -> {
+                    System.out.println("Bye!");
+                    return;
+                }
+
+                default -> System.out.println("Select a valid option from the menu");
             }
         }
     }
