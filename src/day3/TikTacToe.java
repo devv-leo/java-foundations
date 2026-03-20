@@ -1,4 +1,4 @@
-package day3.firedrill3;
+package day3;
 
 public class TikTacToe {
     public static void main(String... args) {
