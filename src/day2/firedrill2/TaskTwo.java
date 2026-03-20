@@ -1,4 +1,4 @@
-﻿package day2.firedrill2;
+package day2.firedrill2;
 
 import java.util.Scanner;
 
