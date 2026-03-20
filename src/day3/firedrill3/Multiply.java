@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TaskOne {
+public class Multiply {
 	public static void main(String[] args) {
 		Scanner inputCollector = new Scanner(System.in);
 		

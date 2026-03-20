@@ -1,4 +1,4 @@
-public class TaskTwo {
+public class TikTacToe {
     public static void main(String... args) {
         char[][] characters = {
                 {'x', 'o', 'x'},
