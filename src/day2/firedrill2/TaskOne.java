@@ -1,3 +1,5 @@
+package day2.firedrill2;
+
 import java.util.Scanner;
 
 public class TaskOne {
@@ -17,3 +19,4 @@ public class TaskOne {
         
     }
 }
+

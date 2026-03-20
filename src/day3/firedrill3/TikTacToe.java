@@ -1,3 +1,5 @@
+package day3.firedrill3;
+
 public class TikTacToe {
     public static void main(String... args) {
         char[][] characters = {
@@ -20,3 +22,4 @@ public class TikTacToe {
         }
     }
 }
+

@@ -1,3 +1,5 @@
+package day2.firedrill1;
+
 public class TaskEight {
     public static void main(String[] args) {
         

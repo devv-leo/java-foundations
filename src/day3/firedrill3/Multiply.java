@@ -1,3 +1,5 @@
+package day3.firedrill3;
+
 import java.util.Scanner;
 
 public class Multiply {
@@ -25,3 +27,4 @@ public class Multiply {
 	}
 
 }
+

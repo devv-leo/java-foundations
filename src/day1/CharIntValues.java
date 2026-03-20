@@ -1,3 +1,5 @@
+package day1;
+
 public class CharIntValues {
     public static void main(String[] args) {
 
