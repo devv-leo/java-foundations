@@ -5,6 +5,8 @@ public class Kata {
         System.out.println("isEven(4): " + isEven(4));
         System.out.println("isPrimeNumber(7): " + isPrimeNumber(7));
         System.out.println("subtract(10, 3): " + subtract(10, 3));
+        System.out.println("divide(10, 3): " + divide(10, 3));
+        System.out.println("factorOf(6): " + factorOf(6));
     }
     
     public static boolean isEven(int number) {
@@ -36,6 +38,16 @@ public class Kata {
             return 0;
         }
         return (float) a / b;
+    }
+    
+    public static int factorOf(int number) {
+        int count = 0;
+        for (int i = 1; i <= number; i++) {
+            if (number % i == 0) {
+                count++;
+            }
+        }
+        return count;
     }
     
 }

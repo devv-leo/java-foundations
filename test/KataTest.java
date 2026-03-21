@@ -38,4 +38,12 @@ public class KataTest {
         assertEquals(2.5f, Kata.divide(5, 2), 0.01f);
     }
 
+    @Test
+    public void testFactorOf() {
+        assertEquals(4, Kata.factorOf(6));
+        assertEquals(2, Kata.factorOf(7));
+        assertEquals(1, Kata.factorOf(1));
+        assertEquals(6, Kata.factorOf(12));
+    }
+
 }

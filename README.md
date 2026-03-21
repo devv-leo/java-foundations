@@ -9,8 +9,8 @@ The source codes in `src/` is a reflection of the files arrangement in [Enum](ht
 ```
 java-foundations/
 ├── src/                          # Source code directory
-│   ├── day1/                     # Day 1 exercises and projects
-│   ├── day2/                     # Day 2 exercises and projects
+│   ├── day1/...                  # Day 1 exercises and projects
+│   ├── day2/...                  # Day 2 exercises and projects
 │   ├── day3/                     # Day 3 exercises and projects
 │   │   └── weekendSnacks/        # Weekend challenge tasks
 │   │       ├── BackToSender.java # Dispatch rider wage calculator
