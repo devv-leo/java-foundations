@@ -30,4 +30,12 @@ public class KataTest {
         assertEquals(5, Kata.subtract(-2, 3));
     }
 
+
+    @Test
+    public void testDivide() {
+        assertEquals(3.33f, Kata.divide(10, 3), 0.01f);
+        assertEquals(0, Kata.divide(10, 0));
+        assertEquals(2.5f, Kata.divide(5, 2), 0.01f);
+    }
+
 }
