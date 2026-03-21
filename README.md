@@ -20,7 +20,8 @@ java-foundations/
 ├── test/                         # Test directory
 │   ├── dsa/                      # DSA tests
 │   ├── BackToSenderTest.java     # BackToSender tests
-│   └── KataTest.java             # Kata functions tests
+│   ├── KataTest.java             # Kata functions tests
+│   └── PizzaWahalaTest.java     # Pizza order calculator tests
 ├── .git/                         # Git version control
 ├── .idea/                        # IntelliJ IDEA configuration
 └── README.md                     # This file
