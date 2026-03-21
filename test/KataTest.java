@@ -12,4 +12,14 @@ public class KataTest {
         assertFalse(Kata.isEven(-3));
     }
 
+    @Test
+    public void testIsPrimeNumber() {
+        assertTrue(Kata.isPrimeNumber(2));
+        assertTrue(Kata.isPrimeNumber(7));
+        assertFalse(Kata.isPrimeNumber(1));
+        assertFalse(Kata.isPrimeNumber(4));
+        assertFalse(Kata.isPrimeNumber(0));
+        assertFalse(Kata.isPrimeNumber(-5));
+    }
+
 }
