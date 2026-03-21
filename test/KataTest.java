@@ -46,4 +46,13 @@ public class KataTest {
         assertEquals(6, Kata.factorOf(12));
     }
 
+    @Test
+    public void testIsSquare() {
+        assertTrue(Kata.isSquare(16));
+        assertTrue(Kata.isSquare(0));
+        assertTrue(Kata.isSquare(1));
+        assertFalse(Kata.isSquare(15));
+        assertFalse(Kata.isSquare(-4));
+    }
+
 }

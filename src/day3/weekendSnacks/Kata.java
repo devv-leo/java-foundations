@@ -7,6 +7,7 @@ public class Kata {
         System.out.println("subtract(10, 3): " + subtract(10, 3));
         System.out.println("divide(10, 3): " + divide(10, 3));
         System.out.println("factorOf(6): " + factorOf(6));
+        System.out.println("isSquare(16): " + isSquare(16));
     }
     
     public static boolean isEven(int number) {
@@ -50,4 +51,11 @@ public class Kata {
         return count;
     }
     
+    public static boolean isSquare(int number) {
+        if (number < 0) {
+            return false;
+        }
+        int sqrt = (int) Math.sqrt(number);
+        return sqrt * sqrt == number;
+    }
 }
