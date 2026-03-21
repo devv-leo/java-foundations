@@ -55,4 +55,13 @@ public class KataTest {
         assertFalse(Kata.isSquare(-4));
     }
 
+    @Test
+    public void testIsPalindrome() {
+        assertTrue(Kata.isPalindrome(12321));
+        assertTrue(Kata.isPalindrome(45554));
+        assertFalse(Kata.isPalindrome(12345));
+        assertFalse(Kata.isPalindrome(1234));
+        assertFalse(Kata.isPalindrome(123456));
+    }
+
 }

@@ -2,12 +2,13 @@ package day3.weekendSnacks;
 
 public class Kata {
     public static void main(String[] args) {
+        System.out.println("Testing Functions:")
         System.out.println("isEven(4): " + isEven(4));
         System.out.println("isPrimeNumber(7): " + isPrimeNumber(7));
         System.out.println("subtract(10, 3): " + subtract(10, 3));
         System.out.println("divide(10, 3): " + divide(10, 3));
         System.out.println("factorOf(6): " + factorOf(6));
-        System.out.println("isSquare(16): " + isSquare(16));
+        System.out.println("isPalindrome(12321): " + isPalindrome(12321));
     }
     
     public static boolean isEven(int number) {
@@ -58,4 +59,14 @@ public class Kata {
         int sqrt = (int) Math.sqrt(number);
         return sqrt * sqrt == number;
     }
+    
+    public static boolean isPalindrome(int number) {
+        if (number < 10000 || number > 99999) {
+            return false;
+        }
+        String str = Integer.toString(number);
+        String reversed = new StringBuilder(str).reverse().toString();
+        return str.equals(reversed);
+    }
+    
 }
