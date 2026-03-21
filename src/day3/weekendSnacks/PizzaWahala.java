@@ -1,4 +1,5 @@
 package day3.weekendSnacks;
+
 import java.util.Scanner;
 
 public class PizzaWahala {
@@ -18,11 +19,11 @@ public class PizzaWahala {
 
         System.out.print(menu);
         int pizzaType = scanner.nextInt();
-        scanner.close();
     
         int pricePerBox = 0;
         int slices = 0;
         String size;
+
         switch (pizzaType) {
             case 1 -> {
                 slices = 4;
@@ -39,13 +40,14 @@ public class PizzaWahala {
                 pricePerBox = 4000;
                 size = "Big boys size";
             }
-            case 4-> {
+            case 4 -> {
                 slices = 12;
                 pricePerBox = 5200;
                 size = "Odogwu size";
             }
             default -> {
-                System.out.println("Please pick a valid value");
+                System.out.println("Pick a valid value");
+                scanner.close();
                 return;
             }
         }
@@ -53,7 +55,13 @@ public class PizzaWahala {
         int boxes = (int) Math.ceil((double) guests / slices);
         int leftoverSlices = slices * boxes - guests;
         int totalPrice = boxes * pricePerBox;
+        
+        System.out.printf("Number of Pizza Boxes to buy = %d boxes. (Explanation: %s contains %d per box, %d boxes should be sufficient " +
+                "for %d persons as it would contain %d slices in all)\n\n", boxes, size, slices, boxes, guests, boxes*slices);
+        System.out.printf("Number of left over slices after serving = %d slices. (Explanation: after serving %d slices, you should have " +
+                "%d slices left)\n\n", leftoverSlices, guests, leftoverSlices);
+        System.out.printf("Price = %d. (Explanation: %d per box for %d boxes)\n", totalPrice, pricePerBox, boxes);
     
-    }
-    
+        scanner.close();
+    }    
 }
