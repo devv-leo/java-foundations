@@ -4,6 +4,8 @@ This repository contains all the tasks and projects in the DreamDevs 2.0 bootcam
 
 ## Project Structure
 
+The source codes in `src/` is a reflection of the files arrangement in [Enum](https://enumverse.com), the LMS used in the bootcamp. For example: `weekendSnacks/` are under Day Three on Enumverse, hence, the file tree below:
+
 ```
 java-foundations/
 ├── src/                          # Source code directory
@@ -12,7 +14,7 @@ java-foundations/
 │   ├── day3/                     # Day 3 exercises and projects
 │   │   └── weekendSnacks/        # Weekend challenge tasks
 │   │       ├── BackToSender.java # Dispatch rider wage calculator
-│   │       └── Functions.java    # Mathematical operations and checks
+│   │       └── Kata.java         # Mathematical operations and check functions
 │   └── dsa/                      # Data structures and algorithms
 ├── test/                         # Test directory
 │   └── dsa/                      # DSA tests

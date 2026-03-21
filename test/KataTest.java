@@ -22,4 +22,12 @@ public class KataTest {
         assertFalse(Kata.isPrimeNumber(-5));
     }
 
+    @Test
+    public void testSubtract() {
+        assertEquals(7, Kata.subtract(10, 3));
+        assertEquals(7, Kata.subtract(3, 10));
+        assertEquals(0, Kata.subtract(5, 5));
+        assertEquals(5, Kata.subtract(-2, 3));
+    }
+
 }

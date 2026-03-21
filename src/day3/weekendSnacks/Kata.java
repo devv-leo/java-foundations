@@ -8,7 +8,8 @@ public class Kata {
     public static boolean isEven(int number) {
         return number % 2 == 0;
     }
-        
+    
+    
     public static boolean isPrimeNumber(int number) {
         if (number <= 1) {
             return false;
@@ -20,4 +21,13 @@ public class Kata {
         }
         return true;
     }
+    
+    public static int subtract(int a, int b) {
+        if (a > b) {
+            return a - b;
+        } else {
+            return b - a;
+        }
+    }
+    
 }
