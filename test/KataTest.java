@@ -64,4 +64,13 @@ public class KataTest {
         assertFalse(Kata.isPalindrome(123456));
     }
 
+    @Test
+    public void testFactorialOf() {
+        assertEquals(120, Kata.factorialOf(5));
+        assertEquals(1, Kata.factorialOf(0));
+        assertEquals(1, Kata.factorialOf(1));
+        assertEquals(0, Kata.factorialOf(-3));
+        assertEquals(3628800, Kata.factorialOf(10));
+    }
+
 }

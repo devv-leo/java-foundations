@@ -2,14 +2,12 @@ package day3.weekendSnacks;
 
 public class Kata {
     public static void main(String[] args) {
-        System.out.println("Testing Functions:")
         System.out.println("isEven(4): " + isEven(4));
         System.out.println("isPrimeNumber(7): " + isPrimeNumber(7));
         System.out.println("subtract(10, 3): " + subtract(10, 3));
         System.out.println("divide(10, 3): " + divide(10, 3));
         System.out.println("factorOf(6): " + factorOf(6));
-        System.out.println("isPalindrome(12321): " + isPalindrome(12321));
-    }
+        System.out.println("factorialOf(5): " + factorialOf(5));    }
     
     public static boolean isEven(int number) {
         return number % 2 == 0;
@@ -67,6 +65,17 @@ public class Kata {
         String str = Integer.toString(number);
         String reversed = new StringBuilder(str).reverse().toString();
         return str.equals(reversed);
+    }
+    
+    public static long factorialOf(int number) {
+        if (number < 0) {
+            return 0;
+        }
+        long result = 1;
+        for (int i = 1; i <= number; i++) {
+            result = result * i;
+        }
+        return result;
     }
     
 }
