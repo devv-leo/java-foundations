@@ -1,13 +1,16 @@
 package day3.weekendSnacks;
 
 public class Kata {
-    public static void main(String[] args) {
+    static void main(String[] args) {
+        System.out.println("Testing functions:");
         System.out.println("isEven(4): " + isEven(4));
         System.out.println("isPrimeNumber(7): " + isPrimeNumber(7));
         System.out.println("subtract(10, 3): " + subtract(10, 3));
         System.out.println("divide(10, 3): " + divide(10, 3));
         System.out.println("factorOf(6): " + factorOf(6));
-        System.out.println("factorialOf(5): " + factorialOf(5));    }
+        System.out.println("factorialOf(5): " + factorialOf(5));
+        System.out.println("squareOf(7): " + squareOf(7));
+    }
     
     public static boolean isEven(int number) {
         return number % 2 == 0;
@@ -78,4 +81,7 @@ public class Kata {
         return result;
     }
     
+    public static long squareOf(int number) {
+        return (long) number * number;
+    }
 }

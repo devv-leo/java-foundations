@@ -55,6 +55,7 @@ public class KataTest {
         assertFalse(Kata.isSquare(-4));
     }
 
+
     @Test
     public void testIsPalindrome() {
         assertTrue(Kata.isPalindrome(12321));
@@ -73,4 +74,11 @@ public class KataTest {
         assertEquals(3628800, Kata.factorialOf(10));
     }
 
+    @Test
+    public void testSquareOf() {
+        assertEquals(49, Kata.squareOf(7));
+        assertEquals(0, Kata.squareOf(0));
+        assertEquals(1, Kata.squareOf(1));
+        assertEquals(100, Kata.squareOf(-10));
+    }
 }
