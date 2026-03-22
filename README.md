@@ -20,12 +20,17 @@ java-foundations/
 │   │       └── arrays/
 │   │           └── ArrayKata.java 
 │   │           └── CreditCardValidator.java
+│   │           └── Checkout.java
+│   │           └── StudentGrade.java
 │   └── dsa/
 ├── test/
 │   ├── dsa/
 │   ├── BackToSenderTest.java
 │   ├── KataTest.java
 │   └── PizzaWahalaTest.java
+│   └── CreditCardValidatorTest.java
+│   └── ArrayKataTest.java
+│   └── CheckoutTest.java
 ├── .git/
 └── README.md
 ```
