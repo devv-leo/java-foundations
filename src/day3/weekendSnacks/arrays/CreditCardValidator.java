@@ -10,6 +10,16 @@ public class CreditCardValidator {
         String cardNumber = scanner.nextLine();
         
         String cardType = getCardType(cardNumber);
+        boolean validLength = isValidLength(cardNumber, cardType);
+        boolean validLuhn = isValidLuhn(cardNumber);
+        String validityStatus = (validLength && validLuhn && !cardType.equals("Invalid")) ? "Valid" : "Invalid";
+        
+        System.out.println("***********************************");
+        System.out.println("**Credit Card Type: " + cardType);
+        System.out.println("**Credit Card Number: " + cardNumber);
+        System.out.println("**Credit Card Digit Length: " + cardNumber.length());
+        System.out.println("**Credit Card Validity Status: " + validityStatus);
+        System.out.println("***********************************");
         
         scanner.close();
     }
