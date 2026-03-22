@@ -16,6 +16,12 @@ public class GreatPyramidBuildRate {
         System.out.print("Enter number of years taken to build: ");
         int years = input.nextInt();
 
+        double totalWeightKg = totalStones * stoneWeightKg;
+
+        int days  = years * 365;
+        int hours = days  * 24;
+        int minutes = hours * 60;
+
         input.close();
     }
 }
