@@ -21,4 +21,33 @@ public class ArrayKata {
         }
         return min;
     }
+
+    public int sumOf(int[] arrayOfIntegers) {
+        int sum = 0;
+        for (int i = 0; i < arrayOfIntegers.length; i++) {
+            sum += arrayOfIntegers[i];
+        }
+        return sum;
+    }
+    
+    public int sumOfEvenNumbersIn(int[] arrayOfIntegers) {
+        int sum = 0;
+        for (int i = 0; i < arrayOfIntegers.length; i++) {
+            if (arrayOfIntegers[i] % 2 == 0) {
+                sum += arrayOfIntegers[i];
+            }
+        }
+        return sum;
+    }
+    
+    public int sumOfOddNumbersIn(int[] arrayOfIntegers) {
+        int sum = 0;
+        for (int i = 0; i < arrayOfIntegers.length; i++) {
+            if (arrayOfIntegers[i] % 2 != 0) {
+                sum += arrayOfIntegers[i];
+            }
+        }
+        return sum;
+    }
+    
 }
