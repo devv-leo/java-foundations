@@ -21,6 +21,12 @@ public class WorldPopulationGrowth {
         long yearFour = (long)(yearThree * (1 + rate));
         long yearFive = (long)(yearFour * (1 + rate));
 
+        System.out.printf("After 1 year  : %,d%n", yearOne);
+        System.out.printf("After 2 years : %,d%n", yearTwo);
+        System.out.printf("After 3 years : %,d%n", yearThree);
+        System.out.printf("After 4 years : %,d%n", yearFour);
+        System.out.printf("After 5 years : %,d%n", yearFive);
+
         input.close();
     }
 }
