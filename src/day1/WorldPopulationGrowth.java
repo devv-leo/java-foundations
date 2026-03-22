@@ -15,6 +15,11 @@ public class WorldPopulationGrowth {
 
         double rate = growthRate / 100;
 
+        long yearOne = (long)(population * (1 + rate));
+        long yearTwo = (long)(yearOne * (1 + rate));
+        long yearThree = (long)(yearTwo * (1 + rate));
+        long yearFour = (long)(yearThree * (1 + rate));
+        long yearFive = (long)(yearFour * (1 + rate));
 
         input.close();
     }
