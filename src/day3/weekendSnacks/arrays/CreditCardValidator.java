@@ -49,4 +49,25 @@ public class CreditCardValidator {
                 return false;
         }
     }
+    
+    public static boolean isValidLuhn(String cardNumber) {
+        int sum = 0;
+        boolean doubleDigit = false;
+        
+        for (int i = cardNumber.length() - 1; i >= 0; i--) {
+            int digit = Character.getNumericValue(cardNumber.charAt(i));
+            
+            if (doubleDigit) {
+                digit *= 2;
+                if (digit > 9) {
+                    digit = digit % 10 + 1;
+                }
+            }
+            
+            sum += digit;
+            doubleDigit = !doubleDigit;
+        }
+        
+        return sum % 10 == 0;
+    }
 }
