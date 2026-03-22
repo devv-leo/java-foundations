@@ -22,6 +22,12 @@ public class GreatPyramidBuildRate {
         int hours = days  * 24;
         int minutes = hours * 60;
 
+        System.out.printf("\nTotal weight of pyramid : %,.0f kg%n", totalWeightKg);
+        System.out.printf("Weight placed per year  : %,.2f kg%n", totalWeightKg / years);
+        System.out.printf("Weight placed per day   : %,.2f kg%n", totalWeightKg / days);
+        System.out.printf("Weight placed per hour  : %,.2f kg%n", totalWeightKg / hours);
+        System.out.printf("Weight placed per minute: %,.2f kg%n", totalWeightKg / minutes);
+
         input.close();
     }
 }
