@@ -32,4 +32,21 @@ public class CreditCardValidator {
                 return "Invalid";
         }
     }
+    
+    public static boolean isValidLength(String cardNumber, String cardType) {
+        int length = cardNumber.length();
+        
+        switch (cardType) {
+            case "Visa":
+                return length == 13 || length == 16;
+            case "MasterCard":
+                return length == 16;
+            case "American Express":
+                return length == 15;
+            case "Discover":
+                return length == 16;
+            default:
+                return false;
+        }
+    }
 }
