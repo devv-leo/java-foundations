@@ -76,4 +76,28 @@ public class ArrayKata {
         }
         return count;
     }
+    
+    public int[] evenNumbersIn(int[] numbers) {
+        int count = noOfEvenNumbersIn(numbers);
+        int[] evenNumbers = new int[count];
+        int index = 0;
+        for (int number : numbers) {
+            if (number % 2 == 0) {
+                evenNumbers[index++] = number;
+            }
+        }
+        return evenNumbers;
+    }
+
+    public int[] oddNumbersIn(int[] numbers) {
+        int count = noOfOddNumbersIn(numbers);
+        int[] oddNumbers = new int[count];
+        int index = 0;
+        for (int number : numbers) {
+            if (number % 2 != 0) {
+                oddNumbers[index++] = number;
+            }
+        }
+        return oddNumbers;
+    }
 }
