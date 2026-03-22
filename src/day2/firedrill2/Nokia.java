@@ -655,6 +655,8 @@ public class Nokia {
 
                 default -> System.out.println("Select a valid option from the menu");
             }
+            
+            inputCollector.close();
         }
     
     }

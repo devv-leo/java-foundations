@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import day3.weekendSnacks.Kata;
+import day3.weekendSnacks.methods.Kata;
 
 public class KataTest {
 

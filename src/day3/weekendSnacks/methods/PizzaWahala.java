@@ -1,4 +1,4 @@
-package day3.weekendSnacks;
+package day3.weekendSnacks.methods;
 
 import java.util.Scanner;
 

@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import day3.weekendSnacks.PizzaWahala;
+import day3.weekendSnacks.methods.PizzaWahala;
 
 public class PizzaWahalaTest {
 
