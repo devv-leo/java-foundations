@@ -4,7 +4,7 @@ This repository contains all the tasks and projects in the DreamDevs 2.0 bootcam
 
 ## Project Structure
 
-The source codes in `src/` is a reflection of the files arrangement in [Enum](https://enumverse.com), the LMS used in the bootcamp. For example: `weekendSnacks/` are under Day Three on Enumverse, hence, the file tree below:
+The source codes in `src/` is a reflection of the files arrangement in [Enum](https://enumverse.com), the LMS used in the bootcamp. For example: `weekendSnacks/` is under Day Three on Enumverse, hence, the file tree below:
 
 ```
 java-foundations/
