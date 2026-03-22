@@ -52,9 +52,9 @@ public class PizzaWahala {
             }
         }
 
-        int boxes = (int) Math.ceil((double) guests / slices);
-        int leftoverSlices = slices * boxes - guests;
-        int totalPrice = boxes * pricePerBox;
+        int boxes = calculateBoxes(guests, slices);
+        int leftoverSlices = calculateLeftoverSlices(guests, boxes, slices);
+        int totalPrice = calculatePrice(boxes, pricePerBox);
         
         System.out.printf("Number of Pizza Boxes to buy = %d boxes. (Explanation: %s contains %d per box, %d boxes should be sufficient " +
                 "for %d persons as it would contain %d slices in all)\n\n", boxes, size, slices, boxes, guests, boxes*slices);
@@ -63,5 +63,17 @@ public class PizzaWahala {
         System.out.printf("Price = %d. (Explanation: %d per box for %d boxes)\n", totalPrice, pricePerBox, boxes);
     
         scanner.close();
-    }    
+    }
+    
+    public static int calculateBoxes(int guests, int slicesPerBox) {
+        return (int) Math.ceil((double) guests / slicesPerBox);
+    }
+    
+    public static int calculateLeftoverSlices(int guests, int boxes, int slicesPerBox) {
+        return slicesPerBox * boxes - guests;
+    }
+    
+    public static int calculatePrice(int boxes, int pricePerBox) {
+        return boxes * pricePerBox;
+    }
 }
