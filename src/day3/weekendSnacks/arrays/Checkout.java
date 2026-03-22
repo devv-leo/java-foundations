@@ -18,6 +18,12 @@ public class Checkout {
         }
         
         double subtotal = calculateSubtotal(items);
+        double discount = calculateDiscount(subtotal);
+        double total = subtotal - discount;
+        
+        System.out.println("Subtotal: " + subtotal);
+        System.out.println("Discount: " + discount);
+        System.out.println("Total: " + total);
         
         scanner.close();
     }
@@ -28,5 +34,17 @@ public class Checkout {
             sum += price;
         }
         return sum;
+    }
+    
+    public static double calculateDiscount(double subtotal) {
+        if (subtotal >= 200) {
+            return subtotal * 0.10;
+        } else if (subtotal >= 100) {
+            return subtotal * 0.05;
+        } else if (subtotal >= 50) {
+            return subtotal * 0.03;
+        } else {
+            return 0;
+        }
     }
 }
