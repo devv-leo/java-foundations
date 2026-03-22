@@ -19,4 +19,22 @@ public class PizzaWahalaTest {
         assertEquals(2, PizzaWahala.calculateBoxes(7, 6));
         assertEquals(3, PizzaWahala.calculateBoxes(15, 6));
     }
+
+
+    @Test
+    public void testCalculateBoxesBigBoys() {
+        assertEquals(2, PizzaWahala.calculateBoxes(15, 8));
+        assertEquals(1, PizzaWahala.calculateBoxes(8, 8));
+        assertEquals(2, PizzaWahala.calculateBoxes(9, 8));
+        assertEquals(3, PizzaWahala.calculateBoxes(20, 8));
+    }
+
+    @Test
+    public void testCalculateBoxesOdogwu() {
+        assertEquals(4, PizzaWahala.calculateBoxes(45, 12));
+        assertEquals(1, PizzaWahala.calculateBoxes(12, 12));
+        assertEquals(2, PizzaWahala.calculateBoxes(13, 12));
+        assertEquals(3, PizzaWahala.calculateBoxes(25, 12));
+    }
+
 }
