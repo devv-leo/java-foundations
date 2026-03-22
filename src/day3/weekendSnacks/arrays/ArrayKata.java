@@ -30,7 +30,7 @@ public class ArrayKata {
         return sum;
     }
     
-    public int sumOfEvenNumbersIn(int[] arrayOfIntegers) {
+    public int sumOfEvenarrayOfIntegersIn(int[] arrayOfIntegers) {
         int sum = 0;
         for (int arrayOfInteger : arrayOfIntegers) {
             if (arrayOfInteger % 2 == 0) {
@@ -40,7 +40,7 @@ public class ArrayKata {
         return sum;
     }
     
-    public int sumOfOddNumbersIn(int[] arrayOfIntegers) {
+    public int sumOfOddarrayOfIntegersIn(int[] arrayOfIntegers) {
         int sum = 0;
         for (int arrayOfInteger : arrayOfIntegers) {
             if (arrayOfInteger % 2 != 0) {
@@ -50,16 +50,16 @@ public class ArrayKata {
         return sum;
     }
 
-    public int[] maximumAndMinimumOf(int[] numbers) {
+    public int[] maximumAndMinimumOf(int[] arrayOfIntegers) {
         int[] result = new int[2];
-        result[0] = maximumIn(numbers);
-        result[1] = minimumIn(numbers);
+        result[0] = maximumIn(arrayOfIntegers);
+        result[1] = minimumIn(arrayOfIntegers);
         return result;
     }
 
-    public int noOfOddNumbersIn(int[] numbers) {
+    public int noOfOddarrayOfIntegersIn(int[] arrayOfIntegers) {
         int count = 0;
-        for (int number : numbers) {
+        for (int number : arrayOfIntegers) {
             if (number % 2 != 0) {
                 count++;
             }
@@ -67,9 +67,9 @@ public class ArrayKata {
         return count;
     }
 
-    public int noOfEvenNumbersIn(int[] numbers) {
+    public int noOfEvenarrayOfIntegersIn(int[] arrayOfIntegers) {
         int count = 0;
-        for (int number : numbers) {
+        for (int number : arrayOfIntegers) {
             if (number % 2 == 0) {
                 count++;
             }
@@ -77,46 +77,46 @@ public class ArrayKata {
         return count;
     }
     
-    public int[] evenNumbersIn(int[] numbers) {
-        int count = noOfEvenNumbersIn(numbers);
-        int[] evenNumbers = new int[count];
+    public int[] evenarrayOfIntegersIn(int[] arrayOfIntegers) {
+        int count = noOfEvenarrayOfIntegersIn(arrayOfIntegers);
+        int[] evenarrayOfIntegers = new int[count];
         int index = 0;
-        for (int number : numbers) {
+        for (int number : arrayOfIntegers) {
             if (number % 2 == 0) {
-                evenNumbers[index++] = number;
+                evenarrayOfIntegers[index++] = number;
             }
         }
-        return evenNumbers;
+        return evenarrayOfIntegers;
     }
 
-    public int[] oddNumbersIn(int[] numbers) {
-        int count = noOfOddNumbersIn(numbers);
-        int[] oddNumbers = new int[count];
+    public int[] oddarrayOfIntegersIn(int[] arrayOfIntegers) {
+        int count = noOfOddarrayOfIntegersIn(arrayOfIntegers);
+        int[] oddarrayOfIntegers = new int[count];
         int index = 0;
-        for (int number : numbers) {
+        for (int number : arrayOfIntegers) {
             if (number % 2 != 0) {
-                oddNumbers[index++] = number;
+                oddarrayOfIntegers[index++] = number;
             }
         }
-        return oddNumbers;
+        return oddarrayOfIntegers;
     }
 
-    public int[] squareNumbersIn(int[] numbers) {
+    public int[] squarearrayOfIntegersIn(int[] arrayOfIntegers) {
         int count = 0;
-        for (int number : numbers) {
+        for (int number : arrayOfIntegers) {
             if (isSquare(number)) {
                 count++;
             }
         }
 
-        int[] squareNumbers = new int[count];
+        int[] squarearrayOfIntegers = new int[count];
         int index = 0;
-        for (int number : numbers) {
+        for (int number : arrayOfIntegers) {
             if (isSquare(number)) {
-                squareNumbers[index++] = number;
+                squarearrayOfIntegers[index++] = number;
             }
         }
-        return squareNumbers;
+        return squarearrayOfIntegers;
     }
 
     private boolean isSquare(int number) {

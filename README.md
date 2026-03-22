@@ -13,13 +13,18 @@ java-foundations/
 │   ├── day2/...
 │   ├── day3/
 │   │   └── weekendSnacks/
-│   │       ├── BackToSender.java # Dispatch rider wage calculator
-│   │       ├── Kata.java         # Mathematical operations and check functions
-│   │       └── PizzaWahala.java  # Pizza order calculator
+│   │       ├── methods/
+│   │       │   ├── BackToSender.java # Dispatch rider wage calculator
+│   │       │   ├── Kata.java         # Mathematical operations and check functions
+│   │       │   └── PizzaWahala.java  # Pizza order calculator
+│   │       └── arrays/
+│   │           └── ArrayKata.java    # Array manipulation functions
 │   └── dsa/                      # Data structures and algorithms
 ├── test/                         # Test directory
 │   ├── dsa/                      # DSA tests
 │   ├── BackToSenderTest.java     # BackToSender tests
+│   ├── KataTest.java             # Kata functions tests
+│   └── PizzaWahalaTest.java     # Pizza order calculator tests
 ├── .git/                         # Git version control
 └── README.md                     # This file
 ```
