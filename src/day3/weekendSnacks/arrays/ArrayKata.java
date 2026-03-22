@@ -100,4 +100,35 @@ public class ArrayKata {
         }
         return oddNumbers;
     }
+
+    public int[] squareNumbersIn(int[] numbers) {
+        int count = 0;
+        for (int number : numbers) {
+            if (isSquare(number)) {
+                count++;
+            }
+        }
+
+        int[] squareNumbers = new int[count];
+        int index = 0;
+        for (int number : numbers) {
+            if (isSquare(number)) {
+                squareNumbers[index++] = number;
+            }
+        }
+        return squareNumbers;
+    }
+
+    private boolean isSquare(int number) {
+        if (number < 0) {
+            return false;
+        }
+        int i = 0;
+        while (i++ < number) {
+            if (i * i == number) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
