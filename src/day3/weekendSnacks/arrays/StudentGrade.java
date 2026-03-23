@@ -20,6 +20,10 @@ public class StudentGrade {
         int highest = findHighest(grades);
         int lowest = findLowest(grades);
         
+        System.out.println("Average: " + average);
+        System.out.println("Highest: " + highest);
+        System.out.println("Lowest: " + lowest);
+        
         scanner.close();
     }
     
