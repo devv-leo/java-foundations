@@ -17,6 +17,8 @@ public class StudentGrade {
         }
         
         double average = calculateAverage(grades);
+        int highest = findHighest(grades);
+        int lowest = findLowest(grades);
         
         scanner.close();
     }
@@ -27,5 +29,25 @@ public class StudentGrade {
             sum += grade;
         }
         return (double) sum / grades.length;
+    }
+    
+    public static int findHighest(int[] grades) {
+        int max = grades[0];
+        for (int i = 1; i < grades.length; i++) {
+            if (grades[i] > max) {
+                max = grades[i];
+            }
+        }
+        return max;
+    }
+    
+    public static int findLowest(int[] grades) {
+        int min = grades[0];
+        for (int i = 1; i < grades.length; i++) {
+            if (grades[i] < min) {
+                min = grades[i];
+            }
+        }
+        return min;
     }
 }
