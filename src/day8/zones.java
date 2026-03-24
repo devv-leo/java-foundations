@@ -31,6 +31,12 @@ public class zones {
         stateZones.put("Sokoto", "North West");
         stateZones.put("Jigawa", "North West");
         stateZones.put("Zamfara", "North West");
+
+        stateZones.put("Abia", "South East");
+        stateZones.put("Anambra", "South East");
+        stateZones.put("Ebonyi", "South East");
+        stateZones.put("Enugu", "South East");
+        stateZones.put("Imo", "South East");
         
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a Nigerian state: ");
