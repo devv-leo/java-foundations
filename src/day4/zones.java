@@ -1,4 +1,4 @@
-package day8;
+package day4;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -51,7 +51,6 @@ public class zones {
         stateZones.put("Ondo", "South West");
         stateZones.put("Ogun", "South West");
         stateZones.put("Oyo", "South West");
-        
         
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a Nigerian state: ");

@@ -1,4 +1,4 @@
-package day8;
+package day4;
 
 public class amountToWords {
     public static void main(String[] args) {
