@@ -9,28 +9,13 @@ The source codes in `src/` is a reflection of the files arrangement in [Enum](ht
 ```
 java-foundations/
 ├── src/
-│   ├── day1/...
-│   ├── day2/...
+│   ├── day1/
+│   ├── day2/
 │   ├── day3/
-│   │   └── weekendSnacks/
-│   │       ├── methods/
-│   │       │   ├── BackToSender.java
-│   │       │   ├── Kata.java
-│   │       │   └── PizzaWahala.java
-│   │       └── arrays/
-│   │           └── ArrayKata.java 
-│   │           └── CreditCardValidator.java
-│   │           └── Checkout.java
-│   │           └── StudentGrade.java
+│   ├── day4/
+│   ├── day5/
 │   └── dsa/
 ├── test/
-│   ├── dsa/
-│   ├── BackToSenderTest.java
-│   ├── KataTest.java
-│   └── PizzaWahalaTest.java
-│   └── CreditCardValidatorTest.java
-│   └── ArrayKataTest.java
-│   └── CheckoutTest.java
 ├── .git/
 └── README.md
 ```
