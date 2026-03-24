@@ -37,6 +37,21 @@ public class zones {
         stateZones.put("Ebonyi", "South East");
         stateZones.put("Enugu", "South East");
         stateZones.put("Imo", "South East");
+
+        stateZones.put("Akwa-Ibom", "South-South");
+        stateZones.put("Bayelsa", "South-South");
+        stateZones.put("Cross-River", "South-South");
+        stateZones.put("Delta", "South-South");
+        stateZones.put("Edo", "South-South");
+        stateZones.put("Rivers", "South-South");
+
+        stateZones.put("Ekiti", "South West");
+        stateZones.put("Lagos", "South West");
+        stateZones.put("Osun", "South West");
+        stateZones.put("Ondo", "South West");
+        stateZones.put("Ogun", "South West");
+        stateZones.put("Oyo", "South West");
+        
         
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a Nigerian state: ");
