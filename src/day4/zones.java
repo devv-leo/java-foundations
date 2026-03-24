@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class zones {
+public class Zones {
     
     public static void main(String[] args) {
         Map<String, String> stateZones = new HashMap<>();

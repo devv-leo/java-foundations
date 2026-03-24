@@ -1,8 +1,8 @@
 package day4;
 
-public class amountToWords {
-    public static void main(String[] args) {
-
+public class AmountToWords {
+    static void main(String[] args) {
+        System.out.println(formatCurrencyAmount(1250));
     }
 
     public static String convertAmountToWords(int amount) {
@@ -15,6 +15,11 @@ public class amountToWords {
         }
 
         return convertNumber(amount);
+    }
+
+    public static String formatCurrencyAmount(int amount) {
+        String words = convertAmountToWords(amount);
+        return words + " naira";
     }
 
     private static String convertNumber(int number) {
