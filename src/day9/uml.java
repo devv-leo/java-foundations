@@ -39,3 +39,18 @@ class Person {
         }
     }
 }
+
+class Main {
+    public static void main(String[] args) {
+        Person leo = new Person();
+
+        leo.addProblem(new Problem("Rent", "FINANCIAL"));
+        leo.addProblem(new Problem("Career path", "BUSINESS"));
+        leo.addProblem(new Problem("Math exam", "EDUCATION"));
+
+        leo.solveProblem("Rent");
+
+        System.out.println("Unsolved problems:");
+        leo.listUnsolvedProblems();
+    }
+}
