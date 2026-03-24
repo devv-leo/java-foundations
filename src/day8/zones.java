@@ -17,13 +17,20 @@ public class zones {
         stateZones.put("Niger", "North Central");
         stateZones.put("Plateau", "North Central");
         
-        
         stateZones.put("Adamawa", "North East");
         stateZones.put("Bauchi", "North East");
         stateZones.put("Borno", "North East");
         stateZones.put("Gombe", "North East");
         stateZones.put("Taraba", "North East");
         stateZones.put("Yobe", "North East");
+
+        stateZones.put("Kaduna", "North West");
+        stateZones.put("Katsina", "North West");
+        stateZones.put("Kano", "North West");
+        stateZones.put("Kebbi", "North West");
+        stateZones.put("Sokoto", "North West");
+        stateZones.put("Jigawa", "North West");
+        stateZones.put("Zamfara", "North West");
         
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a Nigerian state: ");
