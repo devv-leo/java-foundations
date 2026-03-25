@@ -2,7 +2,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import day5.bike.Vehicle;
-
 public class BikeTest {
 
     Bike bike;
@@ -110,7 +109,7 @@ public class BikeTest {
     }
 
     @Test
-    public void speedShouldNotGoBelowZeroOnDeceleration() {
+    public void speedShouldNotGoBelowZero() {
         bike.speed = 0;
         bike.decelerate();
         assertEquals(0, bike.getSpeed());
