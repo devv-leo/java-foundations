@@ -80,4 +80,39 @@ public class BikeTest {
         bike.accelerate();
         assertEquals(48, bike.getSpeed());
     }
+
+    @Test
+    public void decelerationOnGearOneShouldDecrementSpeedByOne() {
+        bike.speed = 15;
+        bike.decelerate();
+        assertEquals(14, bike.getSpeed());
+    }
+
+    @Test
+    public void decelerationOnGearTwoShouldDecrementSpeedByTwo() {
+        bike.speed = 24;
+        bike.decelerate();
+        assertEquals(22, bike.getSpeed());
+    }
+
+    @Test
+    public void decelerationOnGearThreeShouldDecrementSpeedByThree() {
+        bike.speed = 35;
+        bike.decelerate();
+        assertEquals(32, bike.getSpeed());
+    }
+
+    @Test
+    public void decelerationOnGearFourShouldDecrementSpeedByFour() {
+        bike.speed = 44;
+        bike.decelerate();
+        assertEquals(40, bike.getSpeed());
+    }
+
+    @Test
+    public void speedShouldNotGoBelowZeroOnDeceleration() {
+        bike.speed = 0;
+        bike.decelerate();
+        assertEquals(0, bike.getSpeed());
+    }
 }

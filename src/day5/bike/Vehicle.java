@@ -42,4 +42,13 @@ public class Vehicle {
         speed += gear;
         updateGear();
     }
+
+    public void decelerate() {
+        updateGear();
+        speed -= gear;
+        if (speed < 0) {
+            speed = 0;
+        }
+        updateGear();
+    }
 }
