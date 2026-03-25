@@ -36,4 +36,10 @@ public class Vehicle {
             gear = 4;
         }
     }
+
+    public void accelerate() {
+        updateGear();
+        speed += gear;
+        updateGear();
+    }
 }

@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import day5.bike.Vehicle;
 
 public class BikeTest {
 
@@ -50,5 +51,33 @@ public class BikeTest {
         bike.speed = 45;
         bike.updateGear();
         assertEquals(4, bike.getGear());
+    }
+
+    @Test
+    public void accelerationOnGearOneShouldIncrementSpeedByOne() {
+        bike.speed = 15;
+        bike.accelerate();
+        assertEquals(16, bike.getSpeed());
+    }
+
+    @Test
+    public void accelerationOnGearTwoShouldIncrementSpeedByTwo() {
+        bike.speed = 24;
+        bike.accelerate();
+        assertEquals(26, bike.getSpeed());
+    }
+
+    @Test
+    public void accelerationOnGearThreeShouldIncrementSpeedByThree() {
+        bike.speed = 35;
+        bike.accelerate();
+        assertEquals(38, bike.getSpeed());
+    }
+
+    @Test
+    public void accelerationOnGearFourShouldIncrementSpeedByFour() {
+        bike.speed = 44;
+        bike.accelerate();
+        assertEquals(48, bike.getSpeed());
     }
 }
