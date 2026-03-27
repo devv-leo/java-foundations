@@ -24,6 +24,7 @@ java-foundations/
 
 This is an IntelliJ IDEA project. To run the code:
 
+0. Clone the repo and cd.
 1. Open IntelliJ IDEA
 2. File → Open → Select the `java-foundations` directory
 3. Wait for the project to load and dependencies to resolve
