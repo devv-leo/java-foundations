@@ -2,7 +2,22 @@ package day3;
 
 import java.util.Scanner;
 
-public class Multiply {
+public class MultiplyWithoutAsterisk {
+	
+	public static int multiply(int num1, int num2) {
+		int product = 0;
+
+		for (int i = 0; i < Math.abs(num2); i++) {
+			product += num1;
+		}
+
+		if (num2 < 0) {
+            		product = -product;
+        	}
+
+		return product;
+	}
+	
 	public static void main(String[] args) {
 		Scanner inputCollector = new Scanner(System.in);
 		
@@ -12,15 +27,7 @@ public class Multiply {
 		System.out.println("Enter another number");
 		int num2 = inputCollector.nextInt();
 
-		int product = 0;
-
-		for (int i = 0; i < Math.abs(num2); i++) {
-			product += num1;
-	}
-
-		if (num2 < 0) {
-            		product = -product;
-        	}
+		int product = multiply(num1, num2);
 
 		System.out.println("Product is " + product);
 
