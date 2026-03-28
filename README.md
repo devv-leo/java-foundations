@@ -4,7 +4,9 @@ This repository contains all the tasks and projects in the DreamDevs 2.0 bootcam
 
 ## Project Structure
 
-The source codes in `src/` is a reflection of the files arrangement in [Enum](https://enumverse.com), the LMS used in the bootcamp. For example: `weekendSnacks/` is under Day Three on Enumverse, hence, the file tree below:
+Morning drills are done every day. They can be found in each day\'s folder (`day*/`).
+
+The source codes (`src/`) are a reflection of the files arrangements in [Enum](https://enumverse.com), the LMS used in the bootcamp. For example: `weekendSnacks/` is under Day Three on Enumverse, hence, the file tree below:
 
 ```
 java-foundations/
@@ -12,11 +14,15 @@ java-foundations/
 │   ├── day1/
 │   ├── day2/
 │   ├── day3/
+│       └── weekendSnacks/
 │   ├── day4/
 │   ├── day5/
+│   ├── day6/
+│   ├── day7/
+│       └── weekendSnacks2/     # path will be updated in src/ once Day Seven is updated on Enum.
 │   └── dsa/
 ├── test/
-├── .git/
+    └── dsa/
 └── README.md
 ```
 
@@ -38,4 +44,4 @@ Tests are written using JUnit 5. To run all tests:
 
 ## Future Work
 
-As the bootcamp progresses, this repository will grow with more complex algorithms and data structures, web application development, database integration, API development, and a final capstone projects.
+As the bootcamp progresses, this repository will grow with more complex algorithms and data structures, web application development, database integration, API development, and a final capstone project.
