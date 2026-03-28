@@ -2,6 +2,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import day5.bike.Vehicle;
+import day5.bike.Bike;
 public class BikeTest {
 
     Bike bike;

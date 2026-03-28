@@ -2,7 +2,7 @@ package day5.bike;
 
 public class Vehicle {
     boolean isOn;
-    int speed;
+    public int speed;
     int gear;
 
     public void turnOn() {

@@ -1,5 +1,5 @@
 package day5.bike;
 
-public class Bike extends Vehicle { class Bike {
- 
+public class Bike extends Vehicle {
+
 }
