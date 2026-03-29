@@ -34,7 +34,7 @@ public class Bank {
 
     }
 
-    public void deposit(int accountNumber, String pin, BigDecimal amount) {
+    public void deposit(int accountNumber, String pin, BigDecimal amount) throws InvalidAmountException {
         validateAccountNumber(accountNumber);
         Account account = banks.get(accountNumber);
         account.deposit(amount, pin);
@@ -46,7 +46,7 @@ public class Bank {
         account.withdraw(amount, pin);
     }
 
-    public void transfer(int accountNumber1, int accountNumber2, BigDecimal amount, String pin) {
+    public void transfer(int accountNumber1, int accountNumber2, BigDecimal amount, String pin) throws InvalidAmountException {
         validateAccountNumber(accountNumber1);
         validateAccountNumber(accountNumber2);
         Account account1 = banks.get(accountNumber1);
