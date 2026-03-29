@@ -1,7 +1,7 @@
 package day7.weekendSnacks2.bankApp;
 
-import week2.day3.dreamBank.exceptions.InvalidAmountException;
-import week2.day3.dreamBank.exceptions.InvalidPinException;
+import day7.weekendSnacks2.bankApp.exceptions.InvalidAmountException;
+import day7.weekendSnacks2.bankApp.exceptions.InvalidPinException;
 
 import java.math.BigDecimal;
 import java.util.Random;
@@ -24,15 +24,15 @@ public class Account {
         return balance;
     }
 
-    public void deposit(BigDecimal amount, String pin) {
+    public void deposit(BigDecimal amount, String pin) throws day7.weekendSnacks2.bankApp.InvalidAmountException {
         validatePin(pin);
         validateDeposit(amount);
         this.balance = balance.add(amount);
     }
 
-    private void validateDeposit(BigDecimal amount){
+    private void validateDeposit(BigDecimal amount) throws day7.weekendSnacks2.bankApp.InvalidAmountException {
         if (amount.compareTo(BigDecimal.ZERO) < 0) {
-            throw new InvalidAmountException("Amount deposited cannot be negative");
+            throw new day7.weekendSnacks2.bankApp.InvalidAmountException("Amount deposited cannot be negative");
         }
 
     }
