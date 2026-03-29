@@ -1,6 +1,6 @@
 package day7.weekendSnacks2.bankApp;
 
-import week2.day3.dreamBank.exceptions.InvalidAccountNumberException;
+import day7.weekendSnacks2.bankApp.exceptions.InvalidAccountNumberException;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
