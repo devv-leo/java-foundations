@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import day3.weekendSnacks.arrays.StudentGrade;
+import week1.weekendSnacks.arrays.StudentGrade;
 
 public class StudentGradeTest {
 

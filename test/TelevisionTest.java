@@ -1,5 +1,6 @@
-import day5.TV.Television;
 import org.junit.jupiter.api.Test;
+
+import week2.day2.TV.Television;
 
 import static org.junit.jupiter.api.Assertions.*;
 

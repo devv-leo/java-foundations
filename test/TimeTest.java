@@ -1,5 +1,7 @@
-import day4.Time;
 import org.junit.jupiter.api.Test;
+
+import week2.day1.Time;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 

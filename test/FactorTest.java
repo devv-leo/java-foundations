@@ -1,7 +1,8 @@
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
-import day6.Factor;
+import week2.day3.Factor;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class FactorTest {
 

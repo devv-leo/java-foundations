@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.Test;
+
+import week3.day2.LargestKSum;
+
 import static org.junit.jupiter.api.Assertions.*;
-import day8.LargestKSum;
 
 public class LargestKSumTest {
     

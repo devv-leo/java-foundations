@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
-import day3.weekendSnacks.arrays.ArrayKata;
+import week1.weekendSnacks.arrays.ArrayKata;
 
 public class ArrayKataTest {
     

@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import day3.weekendSnacks.arrays.Checkout;
+import week1.weekendSnacks.arrays.Checkout;
 
 public class CheckoutTest {
 

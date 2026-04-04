@@ -4,25 +4,19 @@ This repository contains all the tasks and projects in the DreamDevs 2.0 bootcam
 
 ## Project Structure
 
-Morning drills are done every day. They can be found in each day\'s folder (`day*/`).
+Morning drills are done every day. They can be found in each day's folder (`week*/`).
 
-The source codes (`src/`) are a reflection of the files arrangements in [Enum](https://enumverse.com), the LMS used in the bootcamp. For example: `weekendSnacks/` is under Day Three on Enumverse, hence, the file tree below:
+The source codes (`src/`) are organized by weeks as shown below:
 
 ```
 java-foundations/
 ├── src/
-│   ├── day1/
-│   ├── day2/
-│   ├── day3/
-│       └── weekendSnacks/
-│   ├── day4/
-│   ├── day5/
-│   ├── day6/
-│   ├── day7/
-│       └── weekendSnacks2/     # path will be updated in src/ once Day Seven is updated on Enum.
-│   └── dsa/
+│   ├── dsa/
+│   ├── week1/
+│   ├── week2/
+│   └── week3/
 ├── test/
-    └── dsa/
+│   └── dsa/
 └── README.md
 ```
 

@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import day3.weekendSnacks.arrays.CreditCardValidator;
+import week1.weekendSnacks.arrays.CreditCardValidator;
 
 public class CreditCardValidatorTest {
 

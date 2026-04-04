@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import day3.MultiplyWithoutAsterisk;
+import week1.day3.MultiplyWithoutAsterisk;
 
 public class MultiplyWithoutAsteriskTest {
     

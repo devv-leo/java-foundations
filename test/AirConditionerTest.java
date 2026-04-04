@@ -1,5 +1,7 @@
-import day5.AC.AirConditioner;
 import org.junit.jupiter.api.Test;
+
+import week2.day2.AC.AirConditioner;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class AirConditionerTest {

@@ -1,5 +1,7 @@
-import day5.LCM;
 import org.junit.jupiter.api.Test;
+
+import week2.day2.LCM;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LCMTest {
