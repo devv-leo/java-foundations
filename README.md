@@ -4,7 +4,7 @@ This repository contains all the tasks and projects in the DreamDevs 2.0 bootcam
 
 ## Project Structure
 
-Morning drills are done every day. They can be found in each day's folder (`week*/`).
+Morning drills are done every day. They can be found in each day's folder in `week*/day*`.
 
 The source codes (`src/`) are organized by weeks as shown below:
 
@@ -14,7 +14,8 @@ java-foundations/
 │   ├── dsa/
 │   ├── week1/
 │   ├── week2/
-│   └── week3/
+│   ├── week3/
+│   └── week4/
 ├── test/
 │   └── dsa/
 └── README.md
